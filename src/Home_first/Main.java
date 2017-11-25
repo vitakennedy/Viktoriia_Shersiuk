@@ -1,7 +1,6 @@
-package com.company;
+package Home_first;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -61,7 +60,7 @@ public class Main {
 
         // Input and read from the console
 
-        Scanner in = new Scanner(System.in);
+       /* Scanner in = new Scanner(System.in);
         System.out.print("Enter the amount of numbers and click Enter button ");
         int count = in.nextInt();
         int[] arr = new int[count];
@@ -70,6 +69,7 @@ public class Main {
             arr[i] = in.nextInt();
 
         }
+        */
         // HappyNumbers(count, arr);
         //EvenOddNumbers(count, arr);
         //MinMax(count, arr);
@@ -77,8 +77,6 @@ public class Main {
         //DivBy7and9(count, arr);
         //DifferentThreeDigitNumber(count, arr);
         //ElemEqualMiddle(arr);
-
-
 
 
     }
@@ -110,9 +108,9 @@ public class Main {
 
         System.out.print("\n" +  happy);
 
-        */
-    }
 
+    }
+*/
     /* private static void ElemEqualMiddle(int[] arr) {
         String s = "Elements that are equal to the half-sum of neighboring elements: ";
         for (int i = 1; i < arr.length - 1; i++) {
