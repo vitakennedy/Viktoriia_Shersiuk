@@ -1,19 +1,17 @@
 package Home_OOP_task1;
 
-import java.util.stream.Stream;
-
 /**
  * Created by Viktoriia_Sherstiuk on 7/11/2017.
  */
-abstract public class goods implements Comparable<goods> {
+abstract public class Goods implements Comparable<Goods> {
 
     private String name;
    private double price;
 
-    public goods() {
+    public Goods() {
     }
 
-    public goods(String name, double price) {
+    public Goods(String name, double price) {
         this.name = name;
         this.price = price;
 
@@ -38,7 +36,7 @@ abstract public class goods implements Comparable<goods> {
 
 
     @Override
-   public int compareTo(goods o) {
+   public int compareTo(Goods o) {
         if (this.price < o.getPrice())
             return -1;
         else { return this.price == o.getPrice()  ? 0: 1;
@@ -51,7 +49,7 @@ abstract public class goods implements Comparable<goods> {
 
     @Override
     public String toString() {
-        return "goods{" +
+        return "Goods{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 '}';

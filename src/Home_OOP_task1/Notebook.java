@@ -3,17 +3,17 @@ package Home_OOP_task1;
 /**
  * Created by Viktoriia_Sherstiuk on 7/11/2017.
  */
-public class notebook extends goods {
+public class Notebook extends Goods {
     private String format;
     private int numberOfSheets;
 
-    public notebook(String name, double price, String format, int numberOfSheets) {
+    public Notebook(String name, double price, String format, int numberOfSheets) {
         super(name, price);
         this.format = format;
         this.numberOfSheets = numberOfSheets;
     }
 
-    public notebook() {
+    public Notebook() {
     }
 
     public String getFormat() {
@@ -34,7 +34,7 @@ public class notebook extends goods {
 
     @Override
     public String toString() {
-        return "notebook{" +
+        return "Notebook{" +
                 "name='" + getName() + '\'' +
                 ", price=" + getPrice() +
                 ", format='" + format + '\'' +

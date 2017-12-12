@@ -10,18 +10,18 @@ import java.util.stream.Stream;
  */
 public class ShopGoodsImplements {
 
-    List<goods> item = new ArrayList<goods>();
+    List<Goods> item = new ArrayList<Goods>();
 
-    public void add(goods newGood) {
+    public void add(Goods newGood) {
         item.add(newGood);
     }
 
-    public int count(goods newGood) {
+    public int count(Goods newGood) {
         return item.size();
     }
 
 
-    public goods set(int index) {
+    public Goods set(int index) {
         return item.get(index);
     }
 
@@ -31,7 +31,7 @@ public class ShopGoodsImplements {
 
     public void print() {
         item.forEach( System.out::println);
-      /*  for (goods a :item
+      /*  for (Goods a :item
              ) {
             System.out.println(a);
         };*/
@@ -39,7 +39,7 @@ public class ShopGoodsImplements {
     }
 
 
-    public Stream<goods> getstream() {
+    public Stream<Goods> getstream() {
         return item.stream();
     }
 
